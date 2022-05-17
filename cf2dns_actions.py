@@ -48,9 +48,9 @@ def changeDNS(line, s_info, c_info, domain, sub_domain, cloud):
     global AFFECT_NUM
     if line == "CM":
         line = "移动"
-    elif line == "CU":
+    elif line == "CM":
         line = "联通"
-    elif line == "CT":
+    elif line == "CM":
         line = "电信"
     else:
         print("CHANGE DNS ERROR: ----Time: " + str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())) + "----MESSAGE: LINE ERROR")
