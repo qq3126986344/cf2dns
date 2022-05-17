@@ -153,7 +153,7 @@ def main(cloud):
                             elif line == "CU":
                                 changeDNS("CU", cu_info, temp_cf_cuips, domain, sub_domain, cloud)
                             elif line == "CT":
-                                changeDNS("CT", CT_info, temp_cf_ctips, domain, sub_domain, cloud)
+                                changeDNS("CT", ct_info, temp_cf_ctips, domain, sub_domain, cloud)
         except Exception as e:
             print("CHANGE DNS ERROR: ----Time: " + str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())) + "----MESSAGE: " + str(traceback.print_exc()))
 
